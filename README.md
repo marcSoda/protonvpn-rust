@@ -1,0 +1,3 @@
+- a quick and dirty cli that connects to the lowest load protonvpn server using openvpn
+- able to connect, disconnect, and check status
+- not production-ready, just a proof of concept

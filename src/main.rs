@@ -6,9 +6,9 @@ pub mod vpn_man;
 
 fn main() {
     env_logger::init();
-    // let api_url = "https://api.protonmail.ch/vpn/logicals";        // harcoded in vpnman
-    let ovpn_dir = "/home/marc/working/temp/pvpn/ovpns/*.ovpn";       // glob where .ovpn config files are stored
-    let auth_file = "/home/marc/working/temp/pvpn/ovpns/login.conf";  // path to protonvpn credentials
+
+    let ovpn_dir = "ovpns/*.ovpn";                                    // glob where .ovpn config files are stored
+    let auth_file = "login.conf";                                     // path to protonvpn credentials
     let pid_file = "/tmp/ovpn_pid_file";                              // place to store pid of spawned openvpn process
 
     let matches = App::new("ProtonVPN CLI")
